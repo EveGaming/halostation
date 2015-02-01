@@ -1,0 +1,31 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<head>
+		<script type='text/javascript'>
+			function receiveUpdateData(jsonString)
+			{
+				// We need both jQuery and NanoStateManager to be able to recieve data
+				// At the moment any data received before those libraries are loaded will be lost
+				if (typeof NanoStateManager != 'undefined' && typeof jQuery != 'undefined')
+				{
+					NanoStateManager.receiveUpdateData(jsonString);
+				}
+			}
+		</script>
+		<script type='text/javascript' src='libraries.min.js'></script> <script type='text/javascript' src='nano_utility.js'></script> <script type='text/javascript' src='nano_template.js'></script> <script type='text/javascript' src='nano_state_manager.js'></script> <script type='text/javascript' src='nano_state.js'></script> <script type='text/javascript' src='nano_state_default.js'></script> <script type='text/javascript' src='nano_base_callbacks.js'></script> <script type='text/javascript' src='nano_base_helpers.js'></script> <link rel='stylesheet' type='text/css' href='shared.css'> <link rel='stylesheet' type='text/css' href='icons.css'> <link rel='stylesheet' type='text/css' href='layout_default.css'> 
+	</head>
+	<body scroll=auto data-template-data='{"main":"pda.tmpl","layout":"layout_default.tmpl"}' data-url-parameters='{"src":"[0x210147f2]"}' data-initial-data='{"config":{"title":"Personal Data Assistant","srcObject":{"name":"PDA-Laura Siegrist (Chief Engineer)"},"stateKey":"default","status":2,"autoUpdateLayout":0,"autoUpdateContent":1,"showMap":0,"mapZLevel":1,"user":{"name":"Laura Siegrist"}},"data":{"owner":"Laura Siegrist","ownjob":"Chief Engineer","mode":0,"scanmode":0,"fon":0,"pai":0,"note":"Congratulations, your station has chosen the Thinktronic 5230 Personal Data Assistant!","silent":0,"toff":0,"active_conversation":null,"idInserted":0,"idLink":"--------","cart_loaded":1,"cartridge":{"access":{"access_security":0,"access_engine":1,"access_atmos":1,"access_medical":0,"access_clown":0,"access_mime":0,"access_janitor":0,"access_quartermaster":0,"access_hydroponics":0,"access_reagent_scanner":0,"access_remote_door":0,"access_status_display":1,"access_detonate_pda":0},"name":"Power-On DELUXE","radio":0},"stationTime":"12:01","newMessage":0,"messagescount":null,"messages":null}}'>
+		<div id='uiLayout'>
+		</div>
+		<noscript>
+			<div id='uiNoScript'>
+				<h2>JAVASCRIPT REQUIRED</h2>
+				<p>Your Internet Explorer's Javascript is disabled (or broken).<br/>
+				Enable Javascript and then open this UI again.</p>
+			</div>
+		</noscript>
+	</body>
+</html>
+	
